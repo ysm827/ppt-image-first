@@ -15,16 +15,6 @@ Use this skill to turn a vague PPT request into a generation-ready, image-first 
 - Confirmation gates: `需求确认`, `风格确认`, `生成前确认`, and final review approval.
 - Default ratio: generate preview images and final page visuals in `16:9` unless the user explicitly requests another ratio.
 
-## Mode Selection
-
-Start by choosing the lightest mode that can satisfy the request. Do not ask the user to configure this unless the tradeoff matters.
-
-- `快速草案`: use when the user wants a quick outline or rough direction. Keep intake short, skip heavy preview iteration, and still preserve the required confirmation gates before generation.
-- `标准提案`: default for most PPT creation requests. Run the full conversation-first, preview-first workflow.
-- `高保真图像优先`: use when visual quality, style exploration, or final slide imagery is the core value. Expect richer previews, style refinement, and review/retouch rounds.
-
-Read `references/modes.md` if the request is ambiguous, speed-sensitive, or likely to be over-served by the full workflow.
-
 ## Workflow Phases
 
 Follow these phases in order and do not skip the confirmation gates:
@@ -40,7 +30,6 @@ Read `references/workflow.md` for stage-by-stage execution details.
 ## Progressive Loading
 
 - Intake and baseline: read `references/conversation_framework.md` only when you need the conversation-first intake pattern.
-- Mode choice: read `references/modes.md` when deciding between fast, standard, and high-fidelity paths.
 - Style proposals: read `references/style-system.md` when producing proposal cards or interpreting V1-V8 internally.
 - Preview/review UI: read `references/preview-flow.md` before producing style previews, candidate-picker pages, or review pages.
 - Content basis: read `templates/content_report_reference.md` before writing `content_report.md`.
